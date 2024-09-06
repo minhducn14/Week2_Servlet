@@ -11,19 +11,19 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <filter>
-    <display-name>authenticationFilters</display-name>
-    <filter-name>authenticationFilters</filter-name>
-    <filter-class>servlet.filter.authenticationFilters</filter-class>
+    <display-name>AuthenticationFilters</display-name>
+    <filter-name>AuthenticationFilters</filter-name>
+    <filter-class>bai1.servlet.filter.AuthenticationFilters</filter-class>
   </filter>
   <filter-mapping>
-    <filter-name>authenticationFilters</filter-name>
+    <filter-name>AuthenticationFilters</filter-name>
     <url-pattern>/authenticationFilters</url-pattern>
   </filter-mapping>
   <servlet>
     <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>servlet.session.LoginServlet</servlet-class>
+    <servlet-class>bai1.servlet.session.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -33,7 +33,7 @@
     <description></description>
     <display-name>LogoutServlet</display-name>
     <servlet-name>LogoutServlet</servlet-name>
-    <servlet-class>servlet.session.LogoutServlet</servlet-class>
+    <servlet-class>bai1.servlet.session.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LogoutServlet</servlet-name>
@@ -42,11 +42,56 @@
   <filter>
     <display-name>ImageFilter</display-name>
     <filter-name>ImageFilter</filter-name>
-    <filter-class>servlet.filter.ImageFilter</filter-class>
+    <filter-class>bai1.servlet.filter.ImageFilter</filter-class>
   </filter>
-  <!--
-  <filter-mapping>
-    <filter-name>ImageFilter</filter-name>
-    <url-pattern>/ImageFilter</url-pattern>
-  </filter-mapping> -->
+  <servlet>
+    <description></description>
+    <display-name>UploadServlet</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>bai2.servlet.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UploadToDB</display-name>
+    <servlet-name>UploadToDB</servlet-name>
+    <servlet-class>bai3.servlet.UploadToDB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadToDB</servlet-name>
+    <url-pattern>/uploadToDB</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MessageServlet</display-name>
+    <servlet-name>MessageServlet</servlet-name>
+    <servlet-class>bai3.servlet.MessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessageServlet</servlet-name>
+    <url-pattern>/MessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>bai4.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmailSenderServlet</display-name>
+    <servlet-name>EmailSenderServlet</servlet-name>
+    <servlet-class>bai7.servlet.EmailSenderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmailSenderServlet</servlet-name>
+    <url-pattern>/EmailSenderServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
