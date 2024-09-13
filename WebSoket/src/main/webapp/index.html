@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WebSocket - Chat Demo</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<table>
+		<tr>
+			<td><input type="text" id="userName" placeholder="Username" />
+				<button id="btnConnect" type="button" value="Connect"
+					onclick="connect()">Connect</button></td>
+		</tr>
+		<tr>
+			<td><input type="text" id="message" placeholder="Message" />
+				<button id="btnSendMessage" type="button" value="Send"
+					onclick="sendMessage()">Send</button></td>
+		</tr>
+		<tr>
+			<td>
+				<div id="output"></div>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="./websocket.js"></script>
+</body>
+</html>
